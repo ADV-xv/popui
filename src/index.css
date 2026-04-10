@@ -1,39 +1,106 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background: #f7f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-container {
   width: 375px;
   height: 812px;
-  margin: 40px auto;
-  background: white;
+  background: #fff;
   border-radius: 20px;
-  overflow: hidden;
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
-.primary {
+
+.app-container > div {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+input {
   width: 100%;
   padding: 14px;
-  background: #6C25FF;
-  color: white;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
   border-radius: 8px;
   border: none;
-  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary {
+  background: #6c25ff;
+  color: #fff;
 }
 
 .secondary {
-  width: 100%;
-  padding: 14px;
-  background: #EDEBFF;
-  color: #6C25FF;
-  border-radius: 8px;
-  border: none;
-  margin-top: 12px;
+  background: #edeaff;
+  color: #6c25ff;
+}
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.page h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #6c25ff;
+}
+
+input {
+  margin-bottom: 12px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0 20px;
+}
+
+.page button {
+  margin-top: auto;
 }
