@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f7f8f9;
+}
+
+.app-container {
+  width: 375px;
+  height: 812px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+.primary {
+  width: 100%;
+  padding: 14px;
+  background: #6C25FF;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 12px;
+}
+
+.secondary {
+  width: 100%;
+  padding: 14px;
+  background: #EDEBFF;
+  color: #6C25FF;
+  border-radius: 8px;
+  border: none;
+  margin-top: 12px;
+}
